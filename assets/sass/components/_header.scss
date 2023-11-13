@@ -1,0 +1,25 @@
+.header{
+    &-inner{
+
+    }
+    &-menu{
+        &-bar{
+            .lang{
+                &-btn{
+                    border:1px solid #6495ED;
+                }
+            }
+            &-links{
+                border-radius: 6px;
+                border: 1px solid var(--blue, #6495ED);
+            }
+            .join{
+                color: #6495ED;
+            }
+            .donation{
+                color:#fff;
+                background-color: #6495ED;
+            }
+        }
+    }
+}
