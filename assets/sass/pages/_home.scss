@@ -44,13 +44,19 @@
             line-height: 40px;
             font-weight: 600;
         }
+        a{
+            background-color: #6495ED;
+            font-weight: 600;
+        }
 
     }
     &-text{
         padding-right: 48px;
         &-one{
             margin-bottom: 13.5px;
-
+        }
+        &-two{
+            margin-bottom: 24px;
         }
     }
     &-divider{

@@ -30,14 +30,14 @@
         <!-- cards end -->
 
         <!-- volontyor -->
-        <div class="volontyor container mx-auto flex items-center gap-x-8">
+        <div class="volontyor container mx-auto flex  gap-x-8">
             <img src="~/assets/images/jpg/volontyor-bg.jpg" alt="bg" class="volontyor-img" width="568" height="230">
             <div class="volontyor-wrapper">
                 <h2 class="mb-4">Volontyorlar kerekmi ?</h2>
                 <p class="volontyor-text volontyor-text-one text-base font-semibold">Agarda sizga volontyor kerak bolsa, bizning volontyorlar siz uchun doimo <br> yordamga tayyor</p>
                 <div class="volontyor-divider"></div>
-                <p class="volontyor-text volontyor-text-two text-base font-semibold mb-4">Volontyorlar hizmatidan foydalanish uchun bosing</p>
-                <a href="#" class="text-2xl py-3">Volontyorlar</a>
+                <p class="volontyor-text volontyor-text-two text-base font-semibold">Volontyorlar hizmatidan foydalanish uchun bosing</p>
+                <a href="#" class="text-2xl py-3 px-52 rounded-xl text-white border-blue-400 border-2 hover:bg-inherit hover:border-2 hover:border-blue-400 hover:text-blue-400 duration-500">Volontyorlar</a>
             </div>
         </div>
         <!-- volontyor end -->
