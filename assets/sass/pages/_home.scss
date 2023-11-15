@@ -1,3 +1,6 @@
+.layout-wrapper{
+    background: var(--bg, #FAFDFF);
+}
 // ===== CARDS =====
 .cards{
     margin-bottom: 100px;
@@ -64,5 +67,157 @@
         height: 1px;
         background: #EAEAEA;
         margin-bottom: 16.5px;
+    }
+}
+
+// ========= NEWS =========
+
+.news{
+    margin-bottom: 100px;
+    &__topbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        &__title{
+            color: #000;
+            font-family: Nunito;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 100% */
+        }
+        &__link{
+            span{
+                color: var(--blue, #6495ED);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px; /* 130% */
+            }
+            &__img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &-cards{
+        column-gap: 33px;
+        &-item{
+            border-radius: 14px;
+            background: #fff;
+            box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+            padding: 8px;
+            &-wrapper{
+                position: relative;
+                margin-bottom: 10px;
+                &-box{
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 8px 16px;
+                    bottom: 4px;
+                    right:4px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    gap: 8px;
+                    &-date{
+                        color: var(--blue, #6495ED);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 16px; /* 114.286% */
+                    }
+                }
+            }
+            &-title{
+                color: #2F2E2E;
+            }
+            &-text{
+                font-size:  1rem;
+                line-height: 1.4;
+                font-weight: 700;
+                color: var(--black, #2F2E2E);
+                padding-left: 4px;
+                padding-right: 6px;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+
+// ======== OFFER ==========
+.offer{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    margin-bottom: 100px;
+    &-card{
+        width: 100%;
+        padding: 32px 52px 32px 32px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        column-gap: 88px;
+        border-radius: 12px;
+        background: var(--white, #FFF);
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+        &-text{
+            color: var(--2, #2F508C);
+            font-family: Nunito;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 100% */
+        }
+    }
+}
+
+
+// ======= TASHKILOT =========
+
+.tashkilot{
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: #FFFFFF;
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-cart{
+        width: 100%;
+        max-width: 584px;
+    }
+    &-title{
+        color: #000;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        margin-bottom: 16px;
+        
+    }
+    &-text{
+        color: #000;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 160% */
+    }
+    &-left-img{
+        width: 584px;
+        height: 534px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+    &-right-img{
+        width: 584px;
+        height: 400px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
 }
