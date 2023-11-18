@@ -221,3 +221,102 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
 }
+
+// ======== CONTACT  =======
+
+.contact{
+    padding-top: 100px;
+    margin-bottom: 120px;
+    &-title{
+        color: #000;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+        margin-bottom: 32px;
+    }
+    &-cards{
+        &-socials{
+            width: 100%;
+            max-width: 378px;
+            border-radius: 12px;
+            border: 1px solid var(--border_color, #EAEAEA);
+            background: var(--white, #FFF);
+        }
+        &-form{
+            &-text{
+                color: #000;
+                font-family: Nunito;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px; /* 133.333% */
+            }
+            &-input{
+                width:358px;
+                padding: 8px 16px;
+                border-radius: 4px;
+                border: 1px solid var(--gray-200, #E2E8F0);
+                background: var(--white, #FFF);
+                color: #A0AEC0;
+            }
+            &-social{
+                gap: 38px;
+                display: flex;
+                li{
+                    a{
+                            &:hover{
+                            .social-icons1{
+                                transform: scale(1.2);
+                                path{
+                                    fill:rgb(11, 255, 251);
+                                }
+                            }
+                            .social-icons2{
+                                transform: scale(1.2);
+                                path{
+                                    fill:rgb(250, 117, 137);
+                                }
+                            }
+                            .social-icons3{
+                                transform: scale(1.2);
+                                path{
+                                    fill:rgb(4, 126, 36);
+                                }
+                            }
+                            .social-icons4{
+                                transform: scale(1.2);
+                                path{
+                                    fill:red;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            &-btn{
+                border-radius: 6px;
+                background: var(--blue-500, #3182CE);
+                box-shadow: 0px 0px 10px 0px rgba(241, 234, 234, 0.50);
+                color: #FFF;
+                /* text-lg/lineHeight-7/font-semibold */
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px; /* 155.556% */
+                padding: 8px;
+            }
+        }
+    }
+    &-textarea{
+        padding:16px;
+        border-radius: 6px;
+        border: 1px solid var(--gray-200, #E2E8F0);
+        background: var(--white, #FFF);
+        font-size: 18px;
+        color:#A0AEC0;
+    }
+}
