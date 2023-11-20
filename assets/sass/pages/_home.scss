@@ -222,6 +222,35 @@
     }
 }
 
+// ======== credit ========
+.credits{
+    padding-top: 100px;
+    padding-bottom: 110px;
+    &-amount{
+        background: #fff;
+        padding: 4px;
+        &-btn{
+            color: var(--2, #2F508C);
+            text-align: center;
+            font-family: Nunito;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; 
+            border-radius: 11px;
+            border: 1px solid var(--1, #6495ED);
+            background: #FFF;
+            &:hover{
+                background: #6495ED;
+                color:white;
+            }
+            &:active{
+                opacity: .8;
+            }
+        }
+    }
+}
+
 // ======== CONTACT  =======
 
 .contact{

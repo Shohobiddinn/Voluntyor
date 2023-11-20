@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     "@/assets/sass/main.scss"
   ],
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    "nuxt-swiper"
   ],
   app:{
     head:{

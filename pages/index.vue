@@ -125,6 +125,31 @@
         </div>
         <!-- TASHKILOT END -->
 
+        <!-- Payment -->
+
+        <div class="credits container mx-auto">
+            <form action="">
+                <div class="credits-amount grid grid-cols-6 gap-x-2 mb-8">
+                    <button class="border p-6 credits-amount-btn">5000</button>
+                    <button class="border p-6 credits-amount-btn">10000</button>
+                    <button class="border p-6 credits-amount-btn">15000</button>
+                    <button class="border p-6 credits-amount-btn">30000</button>
+                    <button class="border p-6 credits-amount-btn">50000</button>
+                    <button class="border p-6 credits-amount-btn">100000</button>
+                </div>
+                <div class="credits-type">
+                    <button type="btn" style="width:100px; height: 20px; border:1px solid greenyellow">
+                        <input type="radio" name="" id="">
+
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Payment end -->
+
         <!-- CONTACT  -->
 
         <div class="contact container mx-auto">
