@@ -4,8 +4,17 @@
     &-menu{
         &-bar{
             .lang{
+                border:1px solid #6495ED;
                 &-btn{
-                    border:1px solid #6495ED;
+                    
+                }
+                &-divider{
+                    height: 24px;
+                    width: 1px;
+                    background: #6495ED;
+                }
+                &-showbar{
+                    transition: 500ms;
                 }
             }
             &-links{
@@ -20,5 +29,11 @@
                 background-color: #6495ED;
             }
         }
+    }
+    &-search-full{
+        width: 620px;
+        border-radius: 6px;
+        border: 1px solid var(--blue, #6495ED);
+        background: var(--white, #FFF);
     }
 }
