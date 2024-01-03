@@ -1,12 +1,164 @@
 .header{
     padding: 6px 0;
+    @include media(700px){
+        padding: 2px 0;
+    }
+    @include media(500px){
+        padding: 16px 0;
+        background: transparent;
+    }
     background: #fff;
+    &-inner{
+        .logo{
+            @include media(500px){
+                display: none;
+            }
+            img{
+                @include media(1240px){
+                    width: 180px;
+                    // height: 60px;
+                }
+                @include media(1040px){
+                    width: 150px;
+                    // height: 60px;
+                }
+                @include media(870px){
+                    width: 120px;
+                    // height: 60px;
+                }
+                @include media(700px){
+                    width: 110px;
+                    // height: 60px;
+                }
+                @include media(600px){
+                    width: 90px;
+                    // height: 60px;
+                }
+                
+            }
+        }
+    }
+    nav{
+        @include media(700px){
+            margin-right: 8px;
+        }
+        @include media(600px){
+            margin-right: 6px;
+        }
+        @include media(500px){
+            display: none;
+        }
+    }
+    &-list{
+        @include media(1240px){
+            column-gap: 20px;
+        }
+        @include media(1040px){
+            column-gap: 15px;
+        }
+        @include media(870px){
+            column-gap: 10px;
+        }
+        @include media(870px){
+            column-gap: 8px;
+        }
+        li{
+            display: flex;
+            align-items:center;
+            a{
+                @include media(1240px){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @include media(1040px){
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                @include media(870px){
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+                @include media(700px){
+                    font-size: 8px;
+                    line-height: 12px;
+                }
+                @include media(600px){
+                    font-size: 7px;
+                    line-height: 11px;
+                }
+            }
+            div{
+                @include media(870px){
+                    column-gap: 4px;
+                    // background: #000;
+                }
+                img{
+                    @include media(1240px){
+                        width: 14px;
+                        height: 14px;
+                    }
+                    @include media(1040px){
+                        width: 12px;
+                        height: 12px;
+                    }
+                    @include media(870px){
+                        width: 10px;
+                        height: 10px;
+                        // margin-bottom: -8px;
+                    }
+                    @include media(870px){
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+
+            }
+        }
+    }
     &-menu{
         &-bar{
             .lang{
                 border:1px solid #6495ED;
+                @include media(700px){
+                    margin-right: 4px;
+                }
+                @include media(500px){
+                    display: none;
+                }
                 &-btn{
-                    
+                    @include media(1040px){
+                        padding:7px
+                    }
+                    @include media(870px){
+                        padding:4px;
+                        border-radius: 4px;
+                    }
+                    @include media(700px){
+                        padding:3px;
+                        border-radius: 4px;
+                    }
+                    @include media(600px){
+                        padding:2.1px;
+                        border-radius: .5px;
+                    }
+                   &-img{
+                    @include media(1240px){
+                        width: 20px;
+                        height: 20px;
+                    }
+                    @include media(1040px){
+                        width: 18px;
+                        height: 18px;
+                    }
+                    @include media(870px){
+                        width: 14px;
+                        height: 14px;
+                    }
+                    @include media(600px){
+                        width: 11px;
+                        height: 11px;
+                    }
+                   }
                 }
                 &-divider{
                     height: 24px;
@@ -23,10 +175,70 @@
             }
             .join{
                 color: #6495ED;
+                @include media(1240px){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @include media(1040px){
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                @include media(870px){
+                    font-size: 10px;
+                    line-height: 14px;
+                    padding: 4px;
+                    border-radius: 4px;
+                }
+                @include media(700px){
+                    font-size: 8px;
+                    line-height: 12px;
+                    padding: 4px;
+                    border-radius: 4px;
+                }
+                @include media(600px){
+                    font-size: 7px;
+                    line-height: 11px;
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                }
+                @include media(500px){
+                    display: none;
+                }
             }
             .donation{
                 color:#fff;
                 background-color: #6495ED;
+                @include media(1240px){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                @include media(1040px){
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                @include media(870px){
+                    font-size: 10px;
+                    line-height: 14px;
+                    padding: 4px;
+                    border-radius: 4px;
+                }
+                @include media(700px){
+                    font-size: 8px;
+                    line-height: 12px;
+                    padding: 4px;
+                    border-radius: 4px;
+                }
+                @include media(600px){
+                    font-size: 7px;
+                    line-height: 11px;
+                    padding: 2px 3px;
+                    border-radius: 4px;
+                }
+                @include media(500px){
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 8px 16px;
+                }
             }
         }
     }
@@ -35,5 +247,51 @@
         border-radius: 6px;
         border: 1px solid var(--blue, #6495ED);
         background: var(--white, #FFF);
+        @include media(1240px){
+            width: 580px;
+        }
+        @include media(1040px){
+            width: 520px;
+        }
+        @include media(870px){
+            width: 420px;
+        }
+    }
+    &-search-btn{
+        @include media(1240px){
+            width: 22px;
+            height: 22px;
+        }
+        @include media(1040px){
+            width: 18px;
+            height: 18px;
+        }
+        @include media(870px){
+            width: 14px;
+            height: 14px;
+        }
+        @include media(700px){
+            width: 12px;
+            height: 12px;
+        }
+        @include media(600px){
+            width: 10px;
+            height: 10px;
+        }
+        @include media(500px){
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+.search{
+    margin-right:8px;
+    &-btn{
+        padding: 2px;
+        @include media(500px){
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid var(--blue, #6495ED);
+        }
     }
 }

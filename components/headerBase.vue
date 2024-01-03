@@ -2,23 +2,38 @@
     <div>
         <div class="header">
             <div class="header-inner container mx-auto flex items-center justify-between">
-                <a href="#" class="logo">
-                    <img src="~/assets/images/svg/logo.svg" alt="logo" width="216" height="68">
-                </a>
+                <div class="">
+                    <a href="#" class="logo">
+                        <img src="~/assets/images/svg/logo.svg" alt="logo" width="216" height="68">
+                    </a>
+                    <div class="hidden">
+                        <img src="~/assets/images/svg/mini-menu.svg" alt="" class="" width="24">
+                    </div>
+                </div>
+                <div class="hidden">
+                    <h3 class="">Bosh sahifa</h3>
+                </div>
                 <div class="header-menu flex items-center">
-                    <nav class="mr-4" :class="navbarToggle">
-                        <ul class="flex items-center gap-x-8 2xl:gap-x-4">
+                    <nav v-show="langHide" class="mr-4" :class="navbarToggle">
+                        <ul class="header-list flex items-center gap-x-8">
                             <li><a class="text-base" href="#">Bosh sahifa</a></li>
-                            <li><div class="flex items-center gap-x-2"><span class="text-base">Biz haqimizda</span><img src="~/assets/images/svg/chevron.svg" alt="chevron"></div></li>
+                            <li>
+                                <a href="#" class="text-base">
+                                Biz haqimizda
+                                <!-- <span class="text-base header-list-span"></span>
+                                <img src="~/assets/images/svg/chevron.svg" alt="chevron"> -->
+                                </a>
+                            </li>
                             <li><a class="text-base" href="#">Tadbirlar</a></li>
                             <li><a class="text-base" href="#">Yangiliklar</a></li>
-                            <li><div class="flex items-center gap-x-2">
-                                <span class="text-base">Volontyor</span><img src="~/assets/images/svg/chevron.svg" alt="chevron">
-                            </div></li>
+                            <li><a href="#" class="text-base">
+                                Volontyor
+                                <!-- <span class="text-base header-list-span"></span><img src="~/assets/images/svg/chevron.svg" alt="chevron"> -->
+                            </a></li>
                         </ul>
                     </nav>
                     <div class="header-menu-bar flex items-center">
-                        <div :class="search" class="search mr-4 flex items-center">
+                        <div v-show="langHide" :class="search" class="search mr-4 flex items-center">
                             <div class="header-search-full border p-1 rounded-md " :class="hideBar">
                             <form action="" class="flex item-center gap-x-2">
                                     <input type="text" class="w-full px-2 border-inherit outline-0 text-gray-400 text-base search-box">
@@ -27,7 +42,7 @@
                                 </form>
                             </div>
                             <button :class="showBar" class="search-btn p-2" @click="searchBar">
-                                <img class="motion-safe:animate-bounce" src="~/assets/images/svg/search.svg" alt="search" width="24" height="24">
+                                <img class=" header-search-btn" src="~/assets/images/svg/search.svg" alt="search" width="24" height="24">
                             </button>
 
                         </div>
@@ -61,6 +76,7 @@ const navbarToggle = ref('')
 const search = ref('')
 const langBar = ref('unknown')
 const hideme = ref(true)
+const langHide = ref(true)
 function searchBar(){
     hideBar.value = ''
     showBar.value = 'unknown'
