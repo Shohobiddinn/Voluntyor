@@ -7,7 +7,7 @@
           :grabCursor="true"
           :loop="true"
           :modules="[SwiperEffectCoverflow, SwiperNavigation, SwiperPagination]"
-          :slides-per-view="1.5"
+          :slides-per-view="1.1"
           :centeredSlides="true"
           :spaceBetween="80"
           :coverflowEffect="{
@@ -124,7 +124,7 @@ for (const x of letters) {
 <style>
 #sinov-img {
   object-fit: cover;
-  width: 800px !important;
+  width: 100% !important;
   height: 400px;
   border-radius: 5%;
 }
